@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NÚCLEO PEDAGÓGICO - DE SERTÃOZINHO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .modal {
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform: scale(0.95);
+        }
+        .modal-active .modal {
+            transform: scale(1);
+        }
+        body.modal-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-center">
+                 <img src="https://placehold.co/80x80/EBF4FF/333333?text=NPE" alt="Logo NPE" class="h-16 w-16 mr-4 rounded-full">
+                <h1 class="text-xl md:text-3xl font-bold text-center text-blue-800">
+                    NÚCLEO PEDAGÓGICO DA DIRETORIA DE ENSINO REGIÃO DE SERTÃOZINHO
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Seção Cronograma Plataformas -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-700 mb-6 pb-2 border-b-2 border-blue-200">Cronograma de Plataformas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <button data-modal-target="alura" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Alura</button>
+                <button data-modal-target="robotica" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Robótica</button>
+                <button data-modal-target="matific" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Matific</button>
+                <button data-modal-target="redacao" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Redação</button>
+                <button data-modal-target="leia" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Leia SP</button>
+                <button data-modal-target="speak" class="modal-trigger bg-white hover:bg-blue-50 text-blue-700 font-semibold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Plataforma Speak</button>
+            </div>
+        </section>
+
+        <!-- Seção Cronograma de Atividades -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-700 mb-6 pb-2 border-b-2 border-green-200">Cronograma de Atividades</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <button data-modal-target="bimestres" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Bimestres</button>
+                <button data-modal-target="provaPaulista" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Prova Paulista</button>
+                <button data-modal-target="recomposicao" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Recomposição</button>
+                <button data-modal-target="omasp" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">OMASP</button>
+                <button data-modal-target="redasp" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">REDASP</button>
+                <button data-modal-target="recuperacao" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Recuperação Semestral</button>
+                <button data-modal-target="simuladoSaeb" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Simulado SAEB</button>
+                <button data-modal-target="saeb" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">SAEB</button>
+                <button data-modal-target="saresp" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">SARESP</button>
+                <button data-modal-target="lives" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Lives Itinerários</button>
+                <button data-modal-target="replanejamento" class="modal-trigger bg-white hover:bg-green-50 text-green-700 font-semibold py-3 px-4 border border-green-200 rounded-lg shadow-sm transition-transform transform hover:scale-105">Replanejamento</button>
+            </div>
+        </section>
+
+        <!-- Seção Projetos Ponto Focal -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-700 mb-6 pb-2 border-b-2 border-purple-200">Programas e Projetos (Ponto Focal)</h2>
+            <div class="flex justify-center">
+                <button data-modal-target="projetos" class="modal-trigger bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                    Ver Todos os Programas e Projetos
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal Genérico -->
+    <div id="infoModal" class="opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+        <div id="modalOverlay" class="absolute w-full h-full bg-gray-900 opacity-50"></div>
+        
+        <div class="modal bg-white w-11/12 md:max-w-3xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+            <div class="py-4 text-left px-6">
+                <!-- Título -->
+                <div class="flex justify-between items-center pb-3 border-b">
+                    <p id="modalTitle" class="text-2xl font-bold text-gray-800"></p>
+                    <div id="closeModalBtn" class="cursor-pointer z-50">
+                        <svg class="fill-current text-black hover:text-red-500 transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18">
+                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Conteúdo -->
+                <div id="modalBody" class="mt-4 max-h-[70vh] overflow-y-auto pr-4 text-gray-600 space-y-4">
+                    <!-- Conteúdo será injetado aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Armazenamento de Dados do Modal ---
+        const modalData = {
+            alura: {
+                title: "Plataforma Alura",
+                content: `<p><strong>Como monitorar:</strong> O gestor acessa por meio do site <a href='https://escolatotal.educacao.sp.gov.br/' target='_blank' class='text-blue-600 hover:underline'>escolatotal.educacao.sp.gov.br</a> para ver índices de acessos e de exercícios corretos.</p><p><strong>Periodicidade:</strong> Semanal.</p><p><strong>Ponto Focal:</strong> Davi (Programação - Start by Alura).</p>`
+            },
+            robotica: {
+                title: "Plataforma Robótica",
+                content: `<p><strong>Como monitorar:</strong> O gestor acessa por meio de <a href='https://escolatotal.educacao.sp.gov.br/' target='_blank' class='text-blue-600 hover:underline'>escolatotal.educacao.sp.gov.br</a> > Robótica, para ver atividades propostas, em correção e realizadas.</p><p><strong>Periodicidade:</strong> Visão acumulada de 4 semanas.</p><p><strong>Ponto Focal:</strong> Davi (Robótica Microsoft Micro:bit).</p>`
+            },
+            matific: {
+                title: "Plataforma Matific",
+                content: `<p><strong>Como monitorar:</strong> O Gestor pode acessar a Sala do Futuro >> Matific para monitoramento ao vivo das turmas.</p><p><strong>Periodicidade/Meta:</strong> 2 atividades por aluno concluídas na semana (Ilha do Trabalho Atribuído).</p><p><strong>Ponto Focal:</strong> N/A (Não especificado no documento).</p>`
+            },
+            redacao: {
+                title: "Plataforma Redação",
+                content: `<p><strong>Como monitorar:</strong> Gestor acessa pelo link <a href='https://tarefas.cmsp.educacao.sp.gov.br/' target='_blank' class='text-blue-600 hover:underline'>tarefas.cmsp.educacao.sp.gov.br</a>.</p><p><strong>Público-alvo do BI:</strong> EFAF e EM.</p><p><strong>Periodicidade/Meta:</strong> Duas propostas por bimestre (8 no ano).</p><p><strong>Ponto Focal:</strong> N/A (Não especificado no documento).</p>`
+            },
+            leia: {
+                title: "Plataforma Leia SP",
+                content: `<p><strong>Como monitorar:</strong> Gestor monitora pela Sala do Futuro - Plataforma Leia SP.</p><p><strong>Periodicidade/Meta:</strong> Contabiliza acessos, livros lidos e questões respondidas. Meta de 30 minutos semanais de leitura por estudante.</p><p><strong>Ponto Focal:</strong> Débora, Josué (Sala de Leitura).</p>`
+            },
+            speak: {
+                title: "Plataforma Speak",
+                content: `<p><strong>Como monitorar:</strong> O gestor deve acessar pela plataforma <a href='https://escolatotal.educacao.sp.gov.br/Inicio/Home' target='_blank' class='text-blue-600 hover:underline'>escolatotal.educacao.sp.gov.br</a>.</p><p><strong>Periodicidade:</strong> Acompanhamento semanal.</p><p><strong>Metas:</strong><ul class='list-disc list-inside ml-4'><li>7º ano: 3 lições por semana</li><li>8º e 9º anos: 6 lições por bimestre</li><li>1ª, 2ª e 3ª série: 6 lições por bimestre</li></ul></p><p><strong>Ponto Focal:</strong> Davi.</p>`
+            },
+            bimestres: {
+                title: "Datas dos Bimestres",
+                content: `<ul class='list-disc list-inside'><li><strong>1°:</strong> 03/02 a 15/04</li><li><strong>2º:</strong> 16/04 a 22/07</li><li><strong>3º:</strong> 23/07 a 29/09</li><li><strong>4°:</strong> 30/09 a 12/12</li></ul>`
+            },
+            provaPaulista: {
+                title: "Prova Paulista",
+                content: `<p>A prova é aplicada para todas as séries/anos nas seguintes datas:</p><ul class='list-disc list-inside'><li>31/03 a 09/04</li><li>09 a 18/06</li><li>15 a 24/09</li></ul>`
+            },
+            recomposicao: {
+                title: "Recomposição das Aprendizagens",
+                content: `<ul class='list-disc list-inside space-y-2'><li><strong>24 a 28/03:</strong> Análise de resultados.</li><li><strong>31/03 a 11/04:</strong> Construção do plano de recomposição.</li><li><strong>14 a 17/04:</strong> Realização do Dia D.</li></ul><p class="mt-4"><strong>Ponto Focal:</strong> Paula, Rafael.</p>`
+            },
+            omasp: { title: "OMASP", content: "<p>Período de realização: <strong>05 a 09/05</strong>.</p><p><strong>Ponto Focal:</strong> João Acácio.</p>" },
+            redasp: { title: "REDASP", content: "<p>Período de realização: <strong>20, 21, 26 a 29/08</strong>.</p><p><strong>Ponto Focal:</strong> Andréia.</p>" },
+            recuperacao: {
+                title: "Recuperação Semestral",
+                content: `<p>Datas para a recuperação:</p><ul class='list-disc list-inside'><li><strong>1º Semestre:</strong> 06 a 08/08</li><li><strong>2º Semestre:</strong> 08 a 10/12</li></ul>`
+            },
+            simuladoSaeb: {
+                title: "Simulado SAEB (Físico)",
+                content: `<p>Aplicado para 9°s anos e 3ªs séries nas datas:</p><ul class='list-disc list-inside'><li>24 a 27/02</li><li>12 e 13/08</li></ul>`
+            },
+            saeb: { title: "SAEB", content: "<p>Aplicado para 9°s anos e 3ªs séries no período de <strong>20 a 31/10</strong>.</p>" },
+            saresp: { title: "SARESP", content: "<p>Aplicado para todas as séries/anos no período de <strong>04/11 a 04/12</strong>.</p>" },
+            lives: {
+                title: "Lives Sobre Itinerários Formativos",
+                content: `<p>Lives para professores:</p><ul class='list-disc list-inside'><li><strong>24 de março de 2025:</strong> Preparando Jogos de Empresa de Empreendedorismo (2ª série EM).</li><li><strong>25 de março de 2025:</strong> Projeto de Vida nos Anos Finais e no Ensino Médio.</li><li><strong>27 de março de 2025:</strong> O Componente de Liderança.</li></ul>`
+            },
+            replanejamento: { title: "Replanejamento", content: "<p>Período de replanejamento: <strong>18, 21 e 22/07</strong>.</p>" },
+            projetos: {
+                title: "Programas e Projetos - Ponto Focal",
+                content: `<div class="space-y-3">
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Programa Multiplica:</strong> Alessandra, Fernanda</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Conviva / PEI / PSE:</strong> Aline</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Sermed / CEL / OE SP Lingua Portuguesa / REDASP:</strong> Andréia</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Aluno Monitor:</strong> Andréia, João Acácio</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>ACDA / JEESP / Instagram Diretoria:</strong> Camila</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>EJA:</strong> Camila, Paula, Rafael</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Qualidade da Aula / Aprender Valor:</strong> Daniela</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Sala do Futuro / Programação Alura / Robótica / Expansão Noturno / Speak:</strong> Davi</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Sala de Leitura / Trilha Antirracista:</strong> Débora, Josué</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>ABAG e Concursos:</strong> Jacqueline</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>MEC/PISA / OMASP / Escolas Olímpicas / OE Matemática / Empreendedorismo:</strong> João Acácio</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>PNLD e Materiais / Ensino Profissionalizante / Educação Ambiental:</strong> José Ricardo</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Grêmio Estudantil:</strong> José Ricardo, Paula, Rafael</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Sala de Recursos / APAES / Ensino Colaborativo:</strong> Maria Lúcia</div>
+                    <div class="p-2 bg-gray-50 rounded-md"><strong>Fluência Leitora / Formação Municípios / Currículo em Ação AI / Compromisso Criança Alfabetizada / Alfabetiza Juntos-SP / Recomposição / CUCo / Comissão de Heteroidentificação:</strong> Paula, Rafael</div>
+                    </div>`
+            }
+        };
+
+        // --- Lógica do Modal ---
+        const body = document.querySelector('body');
+        const modal = document.getElementById('infoModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalTriggers = document.querySelectorAll('.modal-trigger');
+
+        function openModal(title, content) {
+            modalTitle.textContent = title;
+            modalBody.innerHTML = content;
+            body.classList.add('modal-active');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeModal() {
+            body.classList.remove('modal-active');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const targetId = trigger.getAttribute('data-modal-target');
+                const data = modalData[targetId];
+                if (data) {
+                    openModal(data.title, data.content);
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && body.classList.contains('modal-active')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
